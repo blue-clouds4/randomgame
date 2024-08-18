@@ -2,6 +2,12 @@ import java.util.*;
 //the beginning,the birth,the end
 class randomgam
     {
+      static int blueatk=77;
+      static String bluespeac="dagger dash";
+      static int bluehp=100;
+      static int bluedef=170;
+      static int bluexp=0;
+      static int bluegold=1000;
         randomgam call=new randomgam();
         public static void main(String[] args){
          Scanner in=new Scanner(System.in);
@@ -23,13 +29,14 @@ class randomgam
       }  
     
         void birth(){
+        randomgam ob= new randomgam();
         //wherefore thee exist?
         System.out.println("what is name?");
         System.out.println("something we do not know");
         System.out.println(" he lies near nothing,while on living");
         System.out.println("destined to break the random,if he chooses to");
         System.out.println("his name shall be:");
-        call.clearScreen();
+        ob.clearScreen();
         String  a="██████╗  █████╗ ███╗   ██╗██████╗  ██████╗ ███╗   ███╗";
         String  b="██╔══██╗██╔══██╗████╗  ██║██╔══██╗██╔═══██╗████╗ ████║";
         String  c="██████╔╝███████║██╔██╗ ██║██║  ██║██║   ██║██╔████╔██║";
@@ -53,7 +60,9 @@ class randomgam
         }
 
         void existence(){
-        //what is existence,something that we dnt know of, us
+          randomgam ob=new randomgam();
+          ob.clearScreen();
+        //what is existence,something that we dont know of, us
         System.out.println("█-rbi");
         call.delay(150);    
         System.out.println("█-Blue_");
@@ -96,6 +105,7 @@ class randomgam
       }
      }
     void dream(){
+      randomgam call =new randomgam();
     //it ..which was a dream?
     System.out.println("you seem not know where you are,");
     System.out.println("this does feel like  memory");
@@ -108,6 +118,8 @@ class randomgam
     System.out.println("what people spoke,will speak,speaking nothing makes sense. they seem to know,but i do not");
     System.out.println("dream,dream awake me before i do understand here");
     System.out.println("                                                                                      ~blue_");
+    call.delay(7000);
+    call.clearScreen();
     System.out.println("evening fellow beings");
     call.delay(150);
     System.out.println("█blue- who's there");
@@ -118,6 +130,15 @@ class randomgam
     call.delay(150);
     System.out.println("█rbi- reminds me of the creator");
     call.delay(150);
-    System.out.println("enough im bored,entertain me. do fight");
+    System.out.println("enough im bored,entertain me. do fight. this is a game y'all should fight");
+    call.delay(150);
+    System.out.println(" what does he mean this is a dream?")
+    call.clearScreen();
+    System.out.println("--------------------------------------------------------------------------------------------------------------------------");
+    //begin fight scene here
+    System.out.println("??? wants to fight the insane group");
+    System.out.println("                hp          atk         def        specialatk");//7 tab for character,5 tab for characteristics
+    System.out.println("Blue_"+"        "+bluehp+"        "+blueatk+"         "+bluedef+"         "bluespec" );
+    System.out.println("randomBro")
     }
 }
