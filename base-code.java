@@ -83,7 +83,23 @@ class randomgam
         System.out.println("rbi is someone we dont understand,does random things and lives,he does things thats him,no fate defines him but still lies in the line of existence. he exists,always has,always has,always will. he'll live when he dreams, a dream to be");
         call.delay(150);
         }
-     void dreamisthis(){
-     //dream
+    
+      void light(){
+      System.out.println("there's a glow in the other end of the space do  you desire to walk through it?yes/no");
+      String life;
+       life=in.next();
+       if(life= "yes"|| life ="y")
+       call.existence();
+       else{
+      System.out.println("it drags you and your friends  in either way");
+      call.existence();
+      //you had no choice either way lol
+      }
      }
+    void dream(){
+    //it ..which was a dream?
+    System.out.println("evening fellow being");
+    call.delay(150);
+    System.out.println("");
     }
+}
