@@ -2,11 +2,11 @@ import java.util.*;
 //the beginning,the birth,the end
 class randomgam
     {
+        randomgam call=new randomgam();
         public static void main(String[] args){
          Scanner in=new Scanner(System.in);
-         randomgam call=new randomgam();
          call.birth();
-           } 
+         } 
         
         void clearScreen() {
         // Print newlines to clear the console
@@ -29,7 +29,6 @@ class randomgam
         System.out.println(" he lies near nothing,while on living");
         System.out.println("destined to break the random,if he chooses to");
         System.out.println("his name shall be:");
-        randomgam call=new randomgam();
         call.clearScreen();
         String  a="██████╗  █████╗ ███╗   ██╗██████╗  ██████╗ ███╗   ███╗";
         String  b="██╔══██╗██╔══██╗████╗  ██║██╔══██╗██╔═══██╗████╗ ████║";
@@ -98,8 +97,27 @@ class randomgam
      }
     void dream(){
     //it ..which was a dream?
-    System.out.println("evening fellow being");
+    System.out.println("you seem not know where you are,");
+    System.out.println("this does feel like  memory");
+    System.out.println("there is something in front of you,so similar");
+    System.out.println("yet,you don't know what's that or this");
+    System.out.println("dream it is called i assume");
+    System.out.println("trees of oak and bamboo around,dream dream");
+    System.out.println("amoungst there lied a school");
+    System.out.println("we entered it,not knowing what there is");
+    System.out.println("what people spoke,will speak,speaking nothing makes sense. they seem to know,but i do not");
+    System.out.println("dream,dream awake me before i do understand here");
+    System.out.println("                                                                                      ~blue_");
+    System.out.println("evening fellow beings");
     call.delay(150);
-    System.out.println("");
+    System.out.println("█blue- who's there");
+    call.delay(150);
+    System.out.println("someone you would'nt know");
+    call.delay(150);
+    System.out.println("█cg-speaks in riddles...");
+    call.delay(150);
+    System.out.println("█rbi- reminds me of the creator");
+    call.delay(150);
+    System.out.println("enough im bored,entertain me. do fight");
     }
 }
