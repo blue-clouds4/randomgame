@@ -47,11 +47,17 @@ class RandomGame {
     void birth() {
         // Wherefore thee exist?
         System.out.println("What is name?");
+        delay(1000);
         System.out.println("Something we do not know");
+        delay(1000);
         System.out.println("He lies near nothing, while on living");
+        delay(1000);
         System.out.println("Destined to break the random, if he chooses to");
+        delay(1000);
         System.out.println("His name shall be:");
+        delay(1000);
         clearScreen();
+        delay(1000);
         String a = "██████╗  █████╗ ███╗   ██╗██████╗  ██████╗ ███╗   ███╗";
         String b = "██╔══██╗██╔══██╗████╗  ██║██╔══██╗██╔═══██╗████╗ ████║";
         String c = "██████╔╝███████║██╔██╗ ██║██║  ██║██║   ██║██╔████╔██║";
@@ -60,15 +66,15 @@ class RandomGame {
         String f = "╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝  ╚═════╝ ╚═╝     ╚═╝";
         // I wish I could insert some music and all here, but I simply cannot
         System.out.println(a);
-        delay(1500);
+        delay(1000);
         System.out.println(b);
-        delay(1500);
+        delay(1000);
         System.out.println(c);
-        delay(1500);
+        delay(1000);
         System.out.println(d);
-        delay(1500);
+        delay(1000);
         System.out.println(e);
-        delay(1500);
+        delay(1000);
         System.out.println(f);
         delay(2500);
         // For CLI
@@ -78,32 +84,32 @@ class RandomGame {
         clearScreen();
         // What is existence? Something that we don't know of, us.
         System.out.println("█-rbi");
-        delay(150);
+        delay(1000);
         System.out.println("█-Blue_");
-        delay(150);
+        delay(1000);
         System.out.println("█-cg");
-        delay(500);
+        delay(1500);
         // We don't know where we are, but we're here.
         System.out.println("█BLUE_-existence..?");
-        delay(150);
+        delay(2000);
         System.out.println("█rbi-we're here, that's what matters");
-        delay(150);
+        delay(2000);
         System.out.println("█cg-we don't if we exist yet, this is the void here. Nothing passes, nothing here, but we are something? Aren't we?");
-        delay(150);
+        delay(2000);
         System.out.println("█blue- We do not know.");
-        delay(150);
+        delay(2000);
         System.out.println("█rbi- The creators named me random. They were mentioning something about us destined to be together, or not. For they also mentioned of me breaking random.");
-        delay(150);
+        delay(2000);
         System.out.println("█blue- I do not understand what they told of mine. They spoke of me running from everything. Me running is the me staying.");
-        delay(150);
+        delay(2000);
         System.out.println("█cg- Nothing, they told of mine.");
-        delay(150);
+        delay(2000);
         System.out.println("cg thinking, the creators had uttered something and she uttered null about it; either she didn’t like what were told, or she was cg. Destined to feel a sense of not belonging anywhere. Nothing can help her come out of it. She’d just feel better for brief with someone.");
-        delay(150);
+        delay(2000);
         System.out.println("blue meanwhile runs and runs and runs forever, trying to flee everything something we do not understand of, neither can he, running or staying. Either way, it makes him feel good. Lies he amongst nothing and something even in existence.");
-        delay(150);
+        delay(2000);
         System.out.println("rbi is someone we don't understand, does random things and lives, he does things that's him, no fate defines him but still lies in the line of existence. He exists, always has, always has, always will. He'll live when he dreams, a dream to be.");
-        delay(150);
+        delay(2000);
     }
 
     void light() {
@@ -135,18 +141,19 @@ class RandomGame {
         delay(7000);
         clearScreen();
         System.out.println("Evening fellow beings.");
-        delay(150);
+        delay(1500);
         System.out.println("█blue- Who's there?");
-        delay(150);
+        delay(1500);
         System.out.println("Someone you wouldn’t know.");
-        delay(150);
+        delay(1500);
         System.out.println("█cg- Speaks in riddles...");
-        delay(150);
+        delay(1500);
         System.out.println("█rbi- Reminds me of the creator.");
-        delay(150);
+        delay(1500);
         System.out.println("Enough, I'm bored. Entertain me. Do fight. This is a game y'all should fight.");
-        delay(150);
+        delay(1500);
         System.out.println("What does he mean this is a dream?");
+        delay(2000);
         clearScreen();
         System.out.println("--------------------------------------------------------------------------------------------------------------------------");
         // Begin fight scene here
@@ -154,32 +161,33 @@ class RandomGame {
     }
 
     void fight(String a) {
-        System.out.println(k+" wants to fight the insane group!");
+        System.out.println(a+" wants to fight the insane group!");
         System.out.println("                 HP          ATK        DEF        SpecialAtk");
         System.out.println("Blue_            " + blueHp + "              " + blueAtk + "              " + blueDef + "              " + blueSpec);
         System.out.println("RandomBro        " + randomBroHp + "         " + randomBroAtk + "         " + randomBroDef + "         " + randomBroSpec);
         System.out.println("CrazyGirl        " + crazyGirlHp + "         " + crazyGirlAtk + "         " + crazyGirlDef + "         " + crazyGirlSpec);
         System.out.println("--------------------------------------------------------------------------------------------------------------------------");
-
+        Scanner in= new Scanner(System.in);
         // Placeholder for fight sequence logic
         System.out.println("The battle begins...");
         System.out.print("..");
         call.delay(100);
         String b=" use help the list of commands";
-        for(int i=0;i<f.length();i++){
-        System.out.print(f.charAt(i));
+        for(int i=0;i<a.length();i++){
+        System.out.print(a.charAt(i));
         call.delay(100);
         }
         String d;
         String c;
+        int k=0;
         while(k==0){
         c=in.next();
         if(c!="\n")
-        d=call.commands(c);
+        call.commands(c);
         }
     }
     
-    String commands(String sw){
+    void commands(String sw){
      switch(sw){
       case "help":
                 call.clearScreen();
@@ -191,9 +199,5 @@ class RandomGame {
                 System.out.println("dagger dash can be used along other character's skill using blueuse daggerDash && characteruse skillSet");
                 }
 
-
-
-
-
-   
+            }
 }
