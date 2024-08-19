@@ -169,8 +169,31 @@ class RandomGame {
         for(int i=0;i<f.length();i++){
         System.out.print(f.charAt(i));
         call.delay(100);
-    }
+        }
+        String d;
         String c;
+        while(k==0){
         c=in.next();
+        if(c!="\n")
+        d=call.commands(c);
+        }
     }
+    
+    String commands(String sw){
+     switch(sw){
+      case "help":
+                call.clearScreen();
+                System.out.println("doing what help does:");
+                System.out.println("---------------------------------------------------------------------------------------------------------------------");
+                System.out.println("about characters and the parameters of them");
+                System.out.println("BLUE:");
+                System.out.println("good for defense,nuetral at attacks; special skill is dagger dash,which deflects attacks.");
+                System.out.println("dagger dash can be used along other character's skill using blueuse daggerDash && characteruse skillSet");
+                }
+
+
+
+
+
+   
 }
